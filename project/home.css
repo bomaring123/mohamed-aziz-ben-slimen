@@ -45,6 +45,7 @@ border-radius: 0 0 20px 20px;
     justify-content: space-between ;
     align-items: center;
     width: 900px;
+    margin-bottom: 20px;
     
 }
 .menuhandler > div {
@@ -54,21 +55,21 @@ cursor: pointer;
 
   
 }
+
 .submenu{
     height: 0px;
     width: 100%;
     background: #333333;
     transition: 1s ease;
     display: flex;
-    justify-content: center;
-    align-items: center;
+
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
     
 
 
 }
-.menuhandler:hover + .submenu {
-    height: 300px;
-}
+
 .center {
     margin: 0 50px;
 }
@@ -83,4 +84,35 @@ cursor: pointer;
     background: #333333;
     display: none;
     border: none;
+}
+.subleft {
+    height: 90%;
+    width:45%;
+    background: #333333;
+    margin: 2% 2% 5% 2%;
+    box-shadow: 0px 5px 10px 0px rgba(31, 30, 30, 0.5);
+  
+}
+.subright {
+    height: 90%;
+    width:45%;
+     margin: 2% 2% 5% 2%;
+    background: #333333;
+  animation: infinite myAnimation 1s;  
+    
+}
+.vL{
+    width: 1%;
+    background: #000000;
+    height: 90%;
+    border-radius: 20%;
+   margin:2% 0;
+
+
+}
+@keyframes myAnimation {
+  from {    box-shadow: 0px 5px 10px 0px rgba(6, 6, 6, 0.5);
+}
+  to {   box-shadow: 0px 5px 10px 0px rgba(0, 255, 0, 0.5);
+}
 }

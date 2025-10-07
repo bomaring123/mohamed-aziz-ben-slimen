@@ -8,30 +8,21 @@ let comunity = document.getElementById("comunity");
 let support =document.getElementById("support");
 let submenu = document.getElementById("sub");
 let textvie = document.getElementById("text");
-let inpu = document.getElementById("inpu");
 let handler = document.getElementById("handler");
 let menu = document.getElementById("menu");
-
-inpu.value="store";
-let data = ""
 function click(local){
-    data = local.outerText;
-    inpu.value=data;  
-
+ 
     submenu.style.height='400px';
-        inpu.style.display ="block";
 
 
 }
+
 function setheight(){
-    submenu.style.height='400px';
-        inpu.style.display ="block";
 
 
 }
 function changeheight(){
         submenu.style.height='0px';
-        inpu.style.display ="none";
 
 }
 handler.addEventListener("mouseenter",function(event){
@@ -63,3 +54,9 @@ comunity.addEventListener('mouseenter',function(event){
 support.addEventListener('mouseenter',function(event){
     click(support)
 })
+
+function reportWindowSize() {
+    console.log(window.innerWidth);
+}
+
+window.onresize = reportWindowSize;
